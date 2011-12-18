@@ -30,6 +30,12 @@ div {
   transform-style: preserve-3d;
 }
 
+.footer {
+  font-family: "league-gothic";
+  position: fixed;
+  bottom: 10px;
+}
+
 ul {
   font-family: "league-gothic";
   font-size: 20px;
