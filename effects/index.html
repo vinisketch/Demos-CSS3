@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Effects </title>
+<link rel="stylesheet" type="text/css" href="../label.css" media="screen" />
+<style>  
+  @font-face {
+    font-family: "league-gothic";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../League_Gothic-webfont.ttf") format("truetype");
+  }
+
+  body { 
+    background-color: #EEE;
+  }
+  
+  *::selection { background-color: transparent; }
+  
+  div {
+    position: absolute;
+    font-family: "league-gothic";
+    font-size:18px;
+    border: 5px solid #c4c8cc;
+    width: 100px; height: 50px;
+    padding: 10px;
+  }
+  
+  .borderRadius {
+    -webkit-border-top-left-radius: 15px 25px;
+    -webkit-border-top-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 10px;
+    -webkit-border-bottom-right-radius: 25px 15px;
+    
+    -moz-border-top-left-radius: 15px 25px;
+    -moz-border-top-right-radius: 0px;
+    -moz-border-bottom-left-radius: 10px;
+    -moz-border-bottom-right-radius: 25px 15px;
+    
+    -o-border-top-left-radius: 15px 25px;
+    -o-border-top-right-radius: 0px;
+    -o-border-bottom-left-radius: 10px;
+    -o-border-bottom-right-radius: 25px 15px;
+    
+    -ms-border-top-left-radius: 15px 25px;
+    -ms-border-top-right-radius: 0px;
+    -ms-border-bottom-left-radius: 10px;
+    -ms-border-bottom-right-radius: 25px 15px;
+    
+    border-top-left-radius: 15px 25px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 25px 15px;
+    
+    top: 50px; left: 50px;
+  }
+  
+  .outerShadow {
+    box-shadow: 4px 4px 10px 5px #333;
+    
+    top: 150px; left: 50px;
+  }
+  
+  .innerShadow {
+    box-shadow: inset 1px 1px 10px #333;
+    
+    top: 150px; left: 200px;
+  }
+    
+  .bothShadow {
+    box-shadow: 4px 4px 10px #333, inset 1px 1px 10px #333;
+    
+    top: 150px; left: 350px;
+  }
+  
+  .textShadow {
+    color: #CCC;
+    text-shadow: 1px 1px #FFF;
+    font-size:25px;
+    top: 250px; left: 50px;
+  }
+  
+  .borderImageRepeatStretch {
+    border-width:15px;
+
+    -webkit-transition-property: width;
+    -webkit-transition-duration: 200ms;
+
+    -moz-transition-property: width;
+    -moz-transition-duration: 200ms;
+
+    -o-transition-property: width;
+    -o-transition-duration: 200ms;
+
+    -ms-transition-property: width;
+    -ms-transition-duration: 200ms;
+
+    transition-property: width;
+    transition-duration: 200ms;
+
+    -moz-border-image:url(border.png) 30 30 repeat stretch;
+    -webkit-border-image:url(border.png) 30 30 repeat stretch;
+    border-image:url(border.png) 30 30 repeat stretch;
+
+    width:56px;
+    padding:15px 25px;
+    height:inherit;
+    top: 350px; left: 50px;
+  }
+
+  .borderImageRepeatStretch:hover {
+    width: 176px;
+  }
+
+  .borderImageStrech
+  {
+    color: white;
+    height:23px;
+    width: 110px;
+    text-align: center;
+    top: 350px; left: 350px;
+    border-radius: 0px;
+
+    -webkit-transition-property: width;
+    -webkit-transition-duration: 200ms;
+
+    -moz-transition-property: width;
+    -moz-transition-duration: 200ms;
+
+    -o-transition-property: width;
+    -o-transition-duration: 200ms;
+
+    -ms-transition-property: width;
+    -ms-transition-duration: 200ms;
+
+    transition-property: width;
+    transition-duration: 200ms;
+
+    -webkit-border-image: url("greenButton.png") 0 12 0 12 stretch stretch;
+    -moz-border-image: url("greenButton.png") 0 12 0 12 stretch stretch;
+    border-image: url("greenButton.png") 0 12 0 12 stretch stretch;
+
+    border-width: 0px 12px;
+  }
+  
+  .borderImageStrech:hover {
+    width: 200px;
+  }
+
+  .gradientLinear {
+    text-shadow: 1px 1px #FFF;
+    font-size:25px;
+    top: 500px; left: 50px;
+    background-image: -webkit-linear-gradient(top, rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(57,130,53,1) 100%);
+    
+    background-image: -moz-linear-gradient(top, rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(57,130,53,1) 100%);
+    
+    background-image: -o-linear-gradient(top, rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(57,130,53,1) 100%);
+    
+    background-image: -ms-linear-gradient(top, rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(57,130,53,1) 100%);
+    
+    background-image: linear-gradient(top, rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(57,130,53,1) 100%);
+    
+  }
+  
+  .gradientRadial {
+    text-shadow: 1px 1px #FFF;
+    font-size:25px;
+    top: 500px; left: 200px;
+    
+    background-image: -webkit-radial-gradient(center, ellipse cover, rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(201,222,150,1) 63%,rgba(57,130,53,1) 100%);
+    
+    background-image: -moz-radial-gradient(center, ellipse cover, rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(201,222,150,1) 63%,rgba(57,130,53,1) 100%);
+    
+    background-image: -o-radial-gradient(center, ellipse cover, rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(201,222,150,1) 63%,rgba(57,130,53,1) 100%);
+    
+    background-image: -ms-radial-gradient(center, ellipse cover, rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(201,222,150,1) 63%,rgba(57,130,53,1) 100%);
+    
+    background-image: radial-gradient(center, ellipse cover, rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(201,222,150,1) 63%,rgba(57,130,53,1) 100%);
+  }
+  
+</style>
+<link rel="shortcut icon" href="../images/favicon.png" />
+</head>
+<body>
+  <div class="borderRadius">Borders</div>
+  <div class="outerShadow">Shadow outer</div>
+  <div class="innerShadow">Shadow inset</div>
+  <div class="bothShadow">Shadow both</div>
+  <div class="textShadow">Text Shadow</div>
+  <div class="borderImageRepeatStretch">Border Image repeat+strech</div>
+  <div class="borderImageStrech">Border Image Strech</div>
+  <div class="gradientLinear">Linear Gradient</div>
+  <div class="gradientRadial">Radial Gradient</div>
+</body>
+</html>

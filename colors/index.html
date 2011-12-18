@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Colors </title>
+<link rel="stylesheet" type="text/css" href="../label.css" media="screen" />
+<style>
+
+  ::selection { background: transparent; }
+  
+  div {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    position:absolute;
+    font-family: "league-gothic";
+    text-align: center;
+    padding-top: 65px;
+    border: 2px solid black;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .red {
+    top:50px;
+    left:100px;
+
+    background-color: rgba(100%,0%,0%,0.8);
+  }
+ 
+  .green {
+    top:50px;
+    left:200px;
+
+    background-color: rgba(0%,100%,0%,0.5);
+  }
+ 
+  .blue {
+    top:150px;
+    left:150px;
+
+    background-color: rgba(0%,0%,100%,0.5);
+  }
+ 
+  .hsl_red {
+    top:250px;
+    left:100px;
+
+    background-color: hsla(0, 100%, 50%, 0.5);
+  }
+ 
+  .hsl_green {
+    top:250px;
+    left:200px;
+
+    background-color: hsla(120, 100%, 50%, 0.5);
+  }
+ 
+  .transparent {
+    top:350px;
+    left:100px;
+
+    background-color: transparent;
+  }
+ 
+  .opacity {
+    top:350px;
+    left:200px;
+
+    background-color: white;
+    opacity: 0.5;
+  }
+</style>
+<link rel="shortcut icon" href="../images/favicon.png" />
+</head>
+<body>
+  <div class="red">red</div>
+  <div class="green">green</div>
+  <div class="blue">blue</div>
+
+  <div class="hsl_red">HSL red</div>
+  <div class="hsl_green">HSL green</div>
+  <div class="transparent">transparent</div>
+  <div class="opacity">opacity</div>
+
+</div>
+</body>
+</html>

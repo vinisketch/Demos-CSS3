@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "league-gothic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("League_Gothic-webfont.ttf") format("truetype");
+}
+
+label {
+  position: absolute;
+  background-color: #333;
+  font-family: Helvetica;
+  font-size: 13px;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  max-width: 200px;
+}
+
+label::before{
+  float:left;
+  content: ' ';
+  display: block;
+  border-width: 8px 8px;
+  border-style: solid;
+  border-color: #333 #333 transparent transparent;
+  position: absolute;
+  top: 0px;
+  left: -16px
+}

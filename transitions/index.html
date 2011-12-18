@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Transitions CSS </title>
+<link rel="stylesheet" type="text/css" href="../label.css" media="screen" />
+<style>  
+  body { 
+    background-color: #EEE;
+  }
+  
+  *::selection { background-color: transparent; }
+    
+  label[name="my_button1"] {
+    position: absolute;
+    top: 110px;
+    left: 200px;
+  }
+  
+  label[name="my_button2"] {
+    position: absolute;
+    top: 210px;
+    left: 200px;
+  }
+  
+  #my_button1 {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+  }
+  
+  #my_button2 {
+    position: absolute;
+    top: 200px;
+    left: 50px;
+  }
+  
+  .button {
+    border: 3px solid #DDD;
+    min-width: 100px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: Helvetica;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    padding: 5px 10px;
+    text-align: center;
+    text-shadow: 1px 1px 1px white;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFF), color-stop(70%,#DDD), color-stop(100%,#EEE));
+
+    background-image: -moz-linear-gradient(top, #FFF 0%, #DDD 70%, #EEE 100%);
+    background-image: -o-linear-gradient(top, #FFF 0%, #DDD 70%, #EEE 100%);
+    background-image: -ms-linear-gradient(top, #FFF 0%, #DDD 70%, #EEE 100%);
+    background-image: linear-gradient(top, #FFF 0%, #DDD 70%, #EEE 100%);
+  }
+  
+  .button.with_anim {
+    -webkit-transition-property: border, -webkit-transform;
+    -webkit-transition-duration: 200ms;
+
+    -moz-transition-property: border, -moz-transform;
+    -moz-transition-duration: 200ms;
+
+    -o-transition-property: border, -o-transform;
+    -o-transition-duration: 200ms;
+
+    -ms-transition-property: border, -ms-transform;
+    -ms-transition-duration: 200ms;
+
+    transition-property: border, transform;
+    transition-duration: 200ms;
+  }
+  
+  .button:hover {
+    border: 3px solid #AAA;
+    
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  
+  .button:active {
+    border: 3px solid #AAA;
+
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#DDD), color-stop(70%,#BBB), color-stop(100%,#CCC));
+
+    background-image: -moz-linear-gradient(top, #DDD 0%, #BBB 70%, #CCC 100%);
+    background-image: -o-linear-gradient(top, #DDD 0%, #BBB 70%, #CCC 100%);
+    background-image: -ms-linear-gradient(top, #DDD 0%, #BBB 70%, #CCC 100%);
+    background-image: linear-gradient(top, #DDD 0%, #BBB 70%, #CCC 100%);
+
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  
+</style>
+<link rel="shortcut icon" href="../images/favicon.png" />
+</head>
+<body>
+  <label name="my_button1">State changes without transition</label>
+  <div class="button" id="my_button1">Click me</div>
+  <label name="my_button2">State changes with transition on scale and border color</label>
+  <div class="button with_anim" id="my_button2">Click me</div>
+</body>
+</html>

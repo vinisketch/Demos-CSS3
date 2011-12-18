@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Transitions CSS </title>
+<link rel="stylesheet" type="text/css" href="../label.css" media="screen" />
+<style>  
+  @font-face {
+    font-family: 'efon';
+    src: url("EFON.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  body { 
+    background-color: #EEE;
+  }
+  
+  *::selection { background-color: transparent; }
+
+  label[name="my_toolbar1"] {
+    position: absolute;
+    top: 110px;
+    left: 200px;
+  }
+  
+  label[name="my_tabbar1"] {
+    position: absolute;
+    top: 180px;
+    left: 240px;
+  }
+
+  #my_toolbar1 {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+  }
+    
+  #my_tabbar1 {
+    position: absolute;
+    top: 170px;
+    left: 50px;
+  }
+    
+  .toolbar {
+    font-family: 'efon';
+    min-width: 100px;
+    color: black;
+    padding: 10px 10px 7px 10px;
+    text-align: center;
+    text-shadow: 1px 1px 1px white;
+    border-top: 1px solid black;
+
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgb(216,222,230)), color-stop(5%,rgb(176,188,204)), color-stop(33%,rgb(153,169,190)), color-stop(49%,rgb(136,155,179)), color-stop(51%,rgb(129,149,175)), color-stop(79%,rgb(115,137,166)), color-stop(100%,rgb(109,131,161)));
+
+    background-image: -moz-linear-gradient(top, rgb(216,222,230) 1%, rgb(176,188,204) 5%, rgb(153,169,190) 33%, rgb(136,155,179) 49%, rgb(129,149,175) 51%, rgb(115,137,166) 79%, rgb(109,131,161) 100%);
+
+    background-image: -o-linear-gradient(top, rgb(216,222,230) 1%, rgb(176,188,204) 5%, rgb(153,169,190) 33%, rgb(136,155,179) 49%, rgb(129,149,175) 51%, rgb(115,137,166) 79%, rgb(109,131,161) 100%);
+
+    background-image: -ms-linear-gradient(top, rgb(216,222,230) 1%, rgb(176,188,204) 5%, rgb(153,169,190) 33%, rgb(136,155,179) 49%, rgb(129,149,175) 51%, rgb(115,137,166) 79%, rgb(109,131,161) 100%);
+
+    background-image: linear-gradient(top, rgb(216,222,230) 1%, rgb(176,188,204) 5%, rgb(153,169,190) 33%, rgb(136,155,179) 49%, rgb(129,149,175) 51%, rgb(115,137,166) 79%, rgb(109,131,161) 100%);
+  }
+  
+  .toolbar > span {
+    font-size: 25px;
+    cursor: pointer;
+  }
+    
+  .toolbar > span:active {
+    color: #CC00FF;
+  }
+    
+  .tabbar {
+    font-family: 'efon';
+    min-width: 100px;
+    color: #ddd;
+    padding: 0px 5px;
+    text-align: center;
+    text-shadow: -1px -1px 1px black;
+    border-top: 1px solid black;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(209,209,209,1)), color-stop(2%,rgba(130,130,130,1)), color-stop(8%,rgba(124,124,124,1)), color-stop(42%,rgba(66,66,66,1)), color-stop(47%,rgba(68,68,68,1)), color-stop(49%,rgba(32,32,32,1)), color-stop(51%,rgba(0,0,0,1)), color-stop(100%,rgba(0,0,0,1)));
+
+    background-image: -moz-linear-gradient(top, rgba(209,209,209,1)  1%, rgb(130,130,130) 2%, rgb(124,124,124) 8%, rgb(66,66,66) 42%, rgb(68,68,68) 47%, rgb(32,32,32) 49%, rgb(0,0,0) 51%, rgb(0,0,0) 100%);
+
+    background-image: -o-linear-gradient(top, rgba(209,209,209,1)  1%, rgb(130,130,130) 2%, rgb(124,124,124) 8%, rgb(66,66,66) 42%, rgb(68,68,68) 47%, rgb(32,32,32) 49%, rgb(0,0,0) 51%, rgb(0,0,0) 100%);
+
+    background-image: -ms-linear-gradient(top, rgba(209,209,209,1)  1%, rgb(130,130,130) 2%, rgb(124,124,124) 8%, rgb(66,66,66) 42%, rgb(68,68,68) 47%, rgb(32,32,32) 49%, rgb(0,0,0) 51%, rgb(0,0,0) 100%);
+
+    background-image: linear-gradient(top, rgba(209,209,209,1)  1%, rgb(130,130,130) 2%, rgb(124,124,124) 8%, rgb(66,66,66) 42%, rgb(68,68,68) 47%, rgb(32,32,32) 49%, rgb(0,0,0) 51%, rgb(0,0,0) 100%);
+  }
+  
+  .tabbar > span {
+    font-size: 25px;
+    display: inline-block;
+    width: 30px;
+    padding: 10px 5px 7px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+    
+  .tabbar > span:active {
+    background-color: rgba(125,10,10,0.5);
+  }
+    
+</style>
+<link rel="shortcut icon" href="../images/favicon.png" />
+</head>
+<body>
+  <label name="my_toolbar1">Tool bar: click icons</label>
+  <div class="toolbar" id="my_toolbar1">
+    <span>b</span>
+    <span>c</span>
+    <span>d</span>
+  </div>
+  <label name="my_tabbar1">Tab bar: click icons</label>
+  <div class="tabbar" id="my_tabbar1">
+    <span>b</span>
+    <span>c</span>
+    <span>d</span>
+  </div>
+</body>
+</html>

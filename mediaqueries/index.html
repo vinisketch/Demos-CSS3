@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Media Queries </title>
+<link rel="stylesheet" type="text/css" href="../label.css" media="screen" />
+<script>
+  function init ()
+  {
+    var handler = {};
+    handler.div = document.getElementById ('handler');
+    handler.frame = document.getElementById ('frame');
+    handler.div.addEventListener ('mousedown', handler);
+    handler.handleEvent = function (event)
+    {
+      switch (event.type)
+      {
+        case 'mousedown':
+          this._start_x = event.pageX;
+          this._start_y = event.pageY;
+          this._x = this.div.offsetLeft;
+          this._y = this.div.offsetTop;
+          
+          document.addEventListener ('mousemove', this, true);
+          document.addEventListener ('mouseup', this, true);
+          break;
+          
+        case 'mousemove':
+          var dx = event.pageX - this._start_x;
+          var dy = event.pageY - this._start_y;
+          
+          var x = this._x + dx;
+          var y = this._y + dy;
+          
+          if (x < 150) x = 150;
+          if (y < 150) y = 150;
+          
+          this.div.style.left = x + 'px';
+          this.div.style.top = y + 'px';
+          this.frame.width = x + 'px';
+          this.frame.height = y + 'px';
+          
+          break;
+
+        case 'mouseup':
+          document.removeEventListener ('mousemove', this, true);
+          document.removeEventListener ('mouseup', this, true);
+          break;
+      }
+    };
+  }
+</script>
+
+<style>
+
+  ::selection { background: transparent; }
+
+  #handler {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-color: red;
+    position: absolute;
+    top: 150px;
+    left:300px;
+  }
+ 
+</style>
+<link rel="shortcut icon" href="../images/favicon.png" />
+</head>
+<body onload="init();">
+<label style="top:160px;left:340px;z-index:-1">Drag the red corner.</label><iframe id="frame" src="frame.html"></iframe><div id="handler"></div>
+
+</div>
+</body>
+</html>

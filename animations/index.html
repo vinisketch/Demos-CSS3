@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Demo CSS3 </title>
+<link rel="stylesheet" type="text/css" href="../index.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="../label.css" media="screen" />
+<style>
+
+  @-webkit-keyframes strangeAnimation {
+    0% {
+      -webkit-transform: rotate3d(10,10,10,0deg);
+      opacity:1;
+      color: red;
+    }
+    30% {
+      -webkit-transform: rotate3d(10,10,0,90deg);
+      opacity:0.5;
+      color: blue;
+    }
+    50% {
+      -webkit-transform: rotate3d(10,10,0,90deg);
+      opacity:0.5;
+      color: orange;
+    }
+    80% {
+      -webkit-transform: rotate3d(10,10,10,240deg);
+    }
+    100% {
+      -webkit-transform: rotate3d(10,10,10,360deg);
+      opacity:1;
+      color: red;
+    }
+  }
+
+  @-moz-keyframes strangeAnimation {
+    0% {
+      -moz-transform: rotate3d(10,10,10,0deg);
+      opacity:1;
+      color: red;
+    }
+    30% {
+      -moz-transform: rotate3d(10,10,0,90deg);
+      opacity:0.5;
+      color: blue;
+    }
+    50% {
+      -moz-transform: rotate3d(10,10,0,90deg);
+      opacity:0.5;
+      color: orange;
+    }
+    80% {
+      -moz-transform: rotate3d(10,10,10,240deg);
+    }
+    100% {
+      -moz-transform: rotate3d(10,10,10,360deg);
+      opacity:1;
+      color: red;
+    }
+  }
+
+  @-ms-keyframes strangeAnimation {
+    0% {
+      -ms-transform: rotate3d(10,10,10,0deg);
+      opacity:1;
+      color: red;
+    }
+    30% {
+      -ms-transform: rotate3d(10,10,0,90deg);
+      opacity:0.5;
+      color: blue;
+    }
+    50% {
+      -ms-transform: rotate3d(10,10,0,90deg);
+      opacity:0.5;
+      color: orange;
+    }
+    80% {
+      -ms-transform: rotate3d(10,10,10,240deg);
+    }
+    100% {
+      -ms-transform: rotate3d(10,10,10,360deg);
+      opacity:1;
+      color: red;
+    }
+  }
+
+  .myAnimation {
+    position: relative;
+    margin-left: 100px;
+    margin-top: 250px;
+
+    -webkit-animation-name: strangeAnimation;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+
+    -moz-animation-name: strangeAnimation;
+    -moz-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+
+    -ms-animation-name: strangeAnimation;
+    -ms-animation-duration: 5s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: ease-in-out;
+
+    animation-name: strangeAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+</style>
+<link rel="shortcut icon" href="../images/favicon.png" />
+</head>
+<body>
+<div class="myAnimation">
+    <div class="textToAnim"><div>P</div><div>u</div><div>s</div><div>h</div><div>Y</div><div>o</div><div>u</div><div>r</div><div>W</div><div>e</div><div>b</div><div>D</div><div>e</div><div>s</div><div>i</div><div>g</div><div>n</div><div>I</div><div>n</div><div>t</div><div>o</div><div>T</div><div>h</div><div>e</div><div>F</div><div>u</div><div>t</div><div>u</div><div>r</div><div>e</div><div>W</div><div>i</div><div>t</div><div>h</div><div>C</div><div>S</div><div>S</div><div>3</div>
+</div>
+</div>
+</body>
+</html>

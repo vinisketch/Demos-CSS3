@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Test Mediaqueries </title>
+
+<style>
+
+  @media (max-width:200px) {
+    body { background-color: yellow; }
+    body:before {
+      content: "GUI SmartPhone";
+    }
+  }
+  
+  @media (min-width:200px) and (max-width:400px) {
+    body { background-color: blue; }
+    body:before {
+      content: "GUI Tablet";
+      color: yellow;
+    }
+  }
+  
+  @media (min-width:400px) {
+    body { background-color: red; }
+    body:before {
+      content: "GUI WorkStation";
+      color: yellow;
+    }
+  } 
+</style>
+</head>
+<body>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Transitions CSS </title>
+<link rel="stylesheet" type="text/css" href="../label.css" media="screen" />
+<style>  
+  @font-face {
+    font-family: 'efon';
+    src: url("EFON.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  body { 
+    background-color: #EEE;
+  }
+  
+  *::selection { background-color: transparent; }
+    
+  label {
+    position: absolute;
+    top: 110px;
+    left: 350px;
+  }
+  
+  @-webkit-keyframes backgroundAnim{
+    0% {
+      background-position: 0px 0px, 0px 0px;
+    }
+    100% {
+      background-position: 0px 0px, -612px 0px;
+    }
+  }
+  
+  @-moz-keyframes backgroundAnim{
+    0% {
+      background-position: 0px 0px, 0px 0px;
+    }
+    100% {
+      background-position: 0px 0px, -612px 0px;
+    }
+  }
+  
+  @-o-keyframes backgroundAnim{
+    0% {
+      background-position: 0px 0px, 0px 0px;
+    }
+    100% {
+      background-position: 0px 0px, -612px 0px;
+    }
+  }
+  
+  @-ms-keyframes backgroundAnim{
+    0% {
+      background-position: 0px 0px, 0px 0px;
+    }
+    100% {
+      background-position: 0px 0px, -612px 0px;
+    }
+  }
+  
+  @keyframes backgroundAnim{
+    0% {
+      background-position: 0px 0px, 0px 0px;
+    }
+    100% {
+      background-position: 0px 0px, -612px 0px;
+    }
+  }
+  
+  .multiple_background {
+    width: 320px;
+    height: 460px;
+    background-image: url(beach.png), url(sky.png);
+    background-position: 0px 0px, 0px 0px;
+    background-repeat: no-repeat;
+    top: 110px;
+    left: 20px;
+    
+    -webkit-animation-name: backgroundAnim;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    
+    -moz-animation-name: backgroundAnim;
+    -moz-animation-duration: 20s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    
+    -o-animation-name: backgroundAnim;
+    -o-animation-duration: 20s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+    
+    -ms-animation-name: backgroundAnim;
+    -ms-animation-duration: 20s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    
+    animation-name: backgroundAnim;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+
+</style>
+<link rel="shortcut icon" href="../images/favicon.png" />
+</head>
+<body>
+  <label name="">Two backgrounds images</label>
+  <div class="multiple_background"></div>
+</body>
+</html>
