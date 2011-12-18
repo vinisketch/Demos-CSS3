@@ -254,19 +254,19 @@ label[name="css3"] {
   top: 60px;
   left: 0px;
   -webkit-transform: rotate(25deg);
-  -webkit-transform-origin: 0% 100%
+  -webkit-transform-origin: 0% 100%;
 
   -moz-transform: rotate(25deg);
-  -moz-transform-origin: 0% 100%
+  -moz-transform-origin: 0% 100%;
 
   -o-transform: rotate(25deg);
-  -o-transform-origin: 0% 100%
+  -o-transform-origin: 0% 100%;
 
   -ms-transform: rotate(25deg);
-  -ms-transform-origin: 0% 100%
+  -ms-transform-origin: 0% 100%;
 
   transform: rotate(25deg);
-  transform-origin: 0% 100%
+  transform-origin: 0% 100%;
 }
 
 .css3 .bottom-right {
@@ -274,19 +274,19 @@ label[name="css3"] {
   top: 60px;
   left: 45px;
   -webkit-transform: rotate(-25deg);
-  -webkit-transform-origin: 100% 100%
+  -webkit-transform-origin: 100% 100%;
 
   -moz-transform: rotate(-25deg);
-  -moz-transform-origin: 100% 100%
+  -moz-transform-origin: 100% 100%;
 
   -o-transform: rotate(-25deg);
-  -o-transform-origin: 100% 100%
+  -o-transform-origin: 100% 100%;
 
   -ms-transform: rotate(-25deg);
-  -ms-transform-origin: 100% 100%
+  -ms-transform-origin: 100% 100%;
 
   transform: rotate(-25deg);
-  transform-origin: 100% 100%
+  transform-origin: 100% 100%;
 }
 
 .css3 .left {
@@ -529,4 +529,82 @@ label[name="css3"] {
   -webkit-transform: rotateY(292deg) translateZ(100px) ;
 }.textToAnim >*:nth-child(38) {
   -webkit-transform: rotateY(300deg) translateZ(100px) ;
+}
+
+.textToAnim >*:nth-child(1) {
+  -moz-transform: rotateY(0deg) translateZ(100px) ;
+}.textToAnim >*:nth-child(2) {
+  -moz-transform: rotateY(8deg) translateZ(100px) ;
+}.textToAnim >*:nth-child(3) {
+  -moz-transform: rotateY(16deg) translateZ(100px) ;
+}.textToAnim >*:nth-child(4) {
+  -moz-transform: rotateY(24deg) translateZ(100px) ;
+}.textToAnim >*:nth-child(5) {
+  -moz-transform: rotateY(38deg) translateZ(100px) ;
+}.textToAnim >*:nth-child(6) {
+  -moz-transform: rotateY(46deg) translateZ(100px) ;
+}.textToAnim >*:nth-child(7) {
+  -moz-transform: rotateY(54deg) translateZ(100px) ;
+}.textToAnim >*:nth-child(8) {
+  -moz-transform: rotateY(62deg) translateZ(100px) ;
+}.textToAnim >*:nth-child(9) {
+  -moz-transform: rotateY(74deg) translateZ(100px) ;
+}.textToAnim >*:nth-child(10) {
+  -moz-transform: rotateY(83deg) translateZ(100px) ;
+}.textToAnim >*:nth-child(11) {
+  -moz-transform: rotateY(90deg) translateZ(100px) ;
+}.textToAnim >*:nth-child(12) {
+  -moz-transform: rotateY(100deg) translateZ(100px) ;
+}.textToAnim >*:nth-child(13) {
+  -moz-transform: rotateY(108deg) translateZ(100px) ;
+}.textToAnim >*:nth-child(14) {
+  -moz-transform: rotateY(114deg) translateZ(100px) ;
+}.textToAnim >*:nth-child(15) {
+  -moz-transform: rotateY(120deg) translateZ(100px) ;
+}.textToAnim >*:nth-child(16) {
+  -moz-transform: rotateY(124deg) translateZ(100px) ;
+}.textToAnim >*:nth-child(17) {
+  -moz-transform: rotateY(132deg) translateZ(100px) ;
+}.textToAnim >*:nth-child(18) {
+  -moz-transform: rotateY(145deg) translateZ(100px) ;
+}.textToAnim >*:nth-child(19) {
+  -moz-transform: rotateY(151deg) translateZ(100px) ;
+}.textToAnim >*:nth-child(20) {
+  -moz-transform: rotateY(158deg) translateZ(100px) ;
+}.textToAnim >*:nth-child(21) {
+  -moz-transform: rotateY(164deg) translateZ(100px) ;
+}.textToAnim >*:nth-child(22) {
+  -moz-transform: rotateY(176deg) translateZ(100px) ;
+}.textToAnim >*:nth-child(23) {
+  -moz-transform: rotateY(183deg) translateZ(100px) ;
+}.textToAnim >*:nth-child(24) {
+  -moz-transform: rotateY(190deg) translateZ(100px) ;
+}.textToAnim >*:nth-child(25) {
+  -moz-transform: rotateY(202deg) translateZ(100px) ;
+}.textToAnim >*:nth-child(26) {
+  -moz-transform: rotateY(209deg) translateZ(100px) ;
+}.textToAnim >*:nth-child(27) {
+  -moz-transform: rotateY(216deg) translateZ(100px) ;
+}.textToAnim >*:nth-child(28) {
+  -moz-transform: rotateY(222deg) translateZ(100px) ;
+}.textToAnim >*:nth-child(29) {
+  -moz-transform: rotateY(229deg) translateZ(100px) ;
+}.textToAnim >*:nth-child(30) {
+  -moz-transform: rotateY(234deg) translateZ(100px) ;
+}.textToAnim >*:nth-child(31) {
+  -moz-transform: rotateY(244deg) translateZ(100px) ;
+}.textToAnim >*:nth-child(32) {
+  -moz-transform: rotateY(254deg) translateZ(100px) ;
+}.textToAnim >*:nth-child(33) {
+  -moz-transform: rotateY(259deg) translateZ(100px) ;
+}.textToAnim >*:nth-child(34) {
+  -moz-transform: rotateY(265deg) translateZ(100px) ;
+}.textToAnim >*:nth-child(35) {
+  -moz-transform: rotateY(276deg) translateZ(100px) ;
+}.textToAnim >*:nth-child(36) {
+  -moz-transform: rotateY(284deg) translateZ(100px) ;
+}.textToAnim >*:nth-child(37) {
+  -moz-transform: rotateY(292deg) translateZ(100px) ;
+}.textToAnim >*:nth-child(38) {
+  -moz-transform: rotateY(300deg) translateZ(100px) ;
 }
